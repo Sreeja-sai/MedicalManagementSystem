@@ -38,7 +38,7 @@ const CaretakerDashboard = () => {
   const fetchMedications = async () => {
     try {
       const token = Cookies.get("jwt_token");
-      const response = await fetch("http://localhost:3000/medications/", {
+      const response = await fetch("https://medicalmanagementsystem-1.onrender.com/medications/", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -87,7 +87,7 @@ const CaretakerDashboard = () => {
     if (!deletingMedication) return;
     try {
       const token = Cookies.get("jwt_token");
-      const response = await fetch(`http://localhost:3000/medications/${deletingMedication.id}/`, {
+      const response = await fetch(`https://medicalmanagementsystem-1.onrender.com/medications/${deletingMedication.id}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

@@ -32,7 +32,7 @@ const PatientDashboard = () => {
   const fetchMedications = async () => {
     try {
       const token = Cookies.get("jwt_token");
-      const response = await fetch("http://localhost:3000/medications/", {
+      const response = await fetch("https://medicalmanagementsystem-1.onrender.com/medications/", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -94,7 +94,7 @@ const PatientDashboard = () => {
 
     try {
       const token = Cookies.get("jwt_token");
-      const response = await fetch(`http://localhost:3000/medications/${medicationId}/`, {
+      const response = await fetch(`https://medicalmanagementsystem-1.onrender.com/medications/${medicationId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

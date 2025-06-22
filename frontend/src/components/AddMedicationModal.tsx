@@ -64,8 +64,8 @@ const AddMedicationModal: React.FC<AddMedicationModalProps> = ({
 
       const isEdit = editingMedication && editingMedication.id;
       const url = isEdit
-        ? `http://localhost:3000/medications/${editingMedication.id}`
-        : "http://localhost:3000/medications/";
+        ? `https://medicalmanagementsystem-1.onrender.com/medications/${editingMedication.id}`
+        : "https://medicalmanagementsystem-1.onrender.com/medications/";
       const method = isEdit ? "PUT" : "POST";
 
       const body = isEdit
