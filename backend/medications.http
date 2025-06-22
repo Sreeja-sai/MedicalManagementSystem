@@ -1,0 +1,57 @@
+POST http://localhost:3000/signup/
+Content-Type: application/json
+
+{
+  "name":"Latha",
+  "email": "latha123@gmail.com",
+  "password": "latha_medical@123",
+  "role":"caretaker"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "email": "sai123@gmail.com",
+  "password": "sai_medical@123"
+}
+
+
+###
+
+POST http://localhost:3000/medications/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiZW1haWwiOiJkZXZpMTIzQGdtYWlsLmNvbSIsInJvbGUiOiJwYXRpZW50IiwiaWF0IjoxNzUwNTA3NDQxfQ.___pVWge7ChIws8EHLQ2iVTkuBatEZwRkM5CIYT5MaE
+
+{
+  "name": "Atta Cookies",
+  "dosage":"1 piece",
+  "frequency":"Once a month",
+  "patientId": 2
+}
+
+
+###
+
+GET http://localhost:3000/medications/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJzYWkxMjNAZ21haWwuY29tIiwicm9sZSI6InBhdGllbnQiLCJpYXQiOjE3NTA1MTA4Mzd9.z1MdG0_R3WaHcHBEhimEa5_6Z-Q0VQwMijjYO2S30SQ
+
+###
+
+PUT http://localhost:3000/medications/3/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJzYWkxMjNAZ21haWwuY29tIiwicm9sZSI6InBhdGllbnQiLCJpYXQiOjE3NTA1MTA4Mzd9.z1MdG0_R3WaHcHBEhimEa5_6Z-Q0VQwMijjYO2S30SQ
+
+{
+  "name":"Ragi oats Cookies",
+  "dosage":"1 bowl",
+  "frequency": "Once a week",
+  "taken_dates":"10-10-2021"
+}
+
+###
+
+DELETE http://localhost:3000/medications/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJzYWkxMjNAZ21haWwuY29tIiwicm9sZSI6InBhdGllbnQiLCJpYXQiOjE3NTA1MTA3Mzd9.rani98HYd4-gI9vL6DGnWAJ2CxY9ll9qt6C-HwjJ5H4
