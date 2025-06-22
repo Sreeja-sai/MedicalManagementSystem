@@ -9,7 +9,10 @@ const cors = require("cors");
 
 const app=express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://medical-management-system-chi.vercel.app', // your Vercel URL
+  credentials: true
+}));
 module.exports=app
 
 const dbPath=path.join(__dirname,'medications.db');
@@ -22,9 +25,11 @@ const dbConnectionServer=async ()=>{
       filename:dbPath,
       driver: sqlite3.Database,
     });
-    app.listen(3000,()=>{
-      console.log("Server Started at localhost : 3000");
-    })
+    const PORT = process.env.PORT || 3000;
+    app.listen(PORT, () => {
+      console.log(`Server started on port ${PORT}`);
+    });
+
   }catch(err){
     console.log(`Database Error: ${err.message}`);
     process.exit(1);
