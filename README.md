@@ -13,68 +13,32 @@ A full-stack web application that enables **patients** and **caretakers** to eff
 
 ---
 
+## 🧪 Demo Credentials
+
+Use the following demo credentials to explore the app:
+
+### 👤 Patients
+
+| Name    | Email                | Password            |
+| ------- | -------------------- | ------------------- |
+| Sai     | sai123@gmail.com     | sai_medical@123     |
+| Sreeja  | sreeja123@gmail.com  | sreeja_medical@123  |
+| Vissu   | vissu123@gmail.com   | vissu_medical@123   |
+| Dharani | dharani123@gmail.com | dharani_medical@123 |
+| Ishu    | Ishu123@gmail.com    | ishu_medical@123    |
+| Jelina  | jelina123@gmail.com  | jelina_medical@123  |
+
+### 🧑‍⚕️ Caretakers
+
+| Name   | Email               | Password           |
+| ------ | ------------------- | ------------------ |
+| Kumari | kumari123@gmail.com | kumari_medical@123 |
+| Latha  | latha123@gmail.com  | latha_medical@123  |
+| Lasya  | lasya123@gmail.com  | lasya_medical@123  |
+
+---
+
 ## 📌 Features
-
-<!-- Some Valid Credentialssss...................
-
-
-
-  "name":"sai",
-  "email": "sai123@gmail.com",
-  "password": "sai_medical@123",
-  "role":"patient"
-
-  ---------------------------------------------------------------
-
-  "name":"sreeja",
-  "email": "sreeja123@gmail.com",
-  "password": "sreeja_medical@123",
-  "role":"patient"
-
----------------------------------------------------
-"name":"vissu",
-  "email": "vissu123@gmail.com",
-  "password": "vissu_medical@123",
-  "role":"patient"
-
-
-  ----------------------------------------------------
-  "name":"Kumari",
-  "email": "kumari123@gmail.com",
-  "password": "kumari_medical@123",
-  "role":"caretaker"
-
-  ---------------------------------------------------
-  "name":"Latha",
-  "email": "latha123@gmail.com",
-  "password": "latha_medical@123",
-  "role":"caretaker"
-
-  --------------------------------------------------------
-
-
-Dharani
-dharani123@gmail.com
-dharani_medical@123
-----------------------------------------------------
-
-Ishu
-Ishu123@gmail.com
-ishu_medical@123
-patient
------------------------------------------------
-
-Jelina
-jelina123@gmail.com
-jelina_medical@123
-patient
--------------------------------------------------
-Lasya
-lasya123@gmail.com
-lasya_medical@123
-caretaker
-
- -->
 
 ### 🔐 Authentication
 
